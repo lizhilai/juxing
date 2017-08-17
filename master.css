@@ -1,0 +1,315 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    min-width: 960px;
+}
+.header {
+    background-color: #004e7c;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+    position: relative;
+}
+.header > h2 {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header > .header-index {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 260px;
+}
+.header > .header-profile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.header li {
+    display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s;
+
+}
+.header li:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: all 0.5s;
+}
+.active-one {
+    border-bottom: 2px solid #fff;
+}
+.main {
+    position: absolute;
+    top: 50px;
+    bottom: 21px;
+    right: 0px;
+    left: 0px;
+}
+.left-side {
+    display: block;
+    background-color: #0165a0;
+    width: 140px;
+    height: 100%;
+    user-select: none;
+    /*position: absolute;
+    left: 0;
+    top: 0;*/
+}
+.left-side li {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 0 10px 10px;
+    /*background-color: inherit;*/
+    transition: all 0.5s;
+}
+.left-side li:hover {
+    color: black;
+    background-color: #ccc;
+    transition: all 0.5s;
+}
+.left-side a {
+    color: #fff;
+}
+.right-side {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 140px;
+    height: 100%;
+}
+.right-side .top-index {
+    color: blue;
+    margin-top: 10px;
+    margin-left: 4px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.right-side .top-index li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    /*margin: 0px 10px 0px 10px;*/
+}
+.active-two {
+    background-color: #ccc;
+    color: #000;
+}
+.active-three {
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    transform: translateY(1px);
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    color: #000;
+}
+.message-box {
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.message-box-do {
+    background-color: #f5f5f5;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.message-box-do  li {
+    display: inline-block;
+    padding: 0px;
+    margin-left: 6px;
+}
+.message-box-do .zzjg-input {
+    height: 30px;
+    width: 80px;
+    background-color: #f5f5f5;
+    border: 0;
+    box-shadow: inset 0px 0px 6px #aaa;
+    border-radius: 4px 0px 0px 4px;
+    padding-left: 6px;
+    outline: none;
+}
+.message-box-do .zzjg-button {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    width: 60px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #aaa;
+    padding: 0px 2px;
+    position: relative;
+    left: 0px;
+    top: 2px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+.message-box-do .bt-input {
+    height: 30px;
+    width: 130px;
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 6px #a57373;
+    padding-left: 6px;
+    outline: none;
+}
+.message-box-do select {
+    height: 30px;
+    width: 70px;
+}
+.message-box-do .cx-button {
+    height: 30px;
+    width: 50px;
+    background-color: #35a6e7;
+    color: #fff;
+    outline: none;
+    border: 1px solid #7661a2;
+    cursor: pointer;
+    border-radius: 6px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+td {
+    text-align: center;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.message-box-head {
+    position: absolute;
+    left: 10px;
+    right: 17px;
+    border-bottom: solid #000 1px;
+}
+.message-box-head > .table-head {
+    height: 30px;
+    padding: 10px;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #ccc;
+}
+.message-box-body {
+    border: solid #ccc 1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 110px;
+    bottom: 100px;
+    left: 10px;
+    right: 10px;
+}
+.message-box-body tr:nth-child(2n+1) {
+    background-color: #f5f5f5;
+}
+.message-box-body tr:nth-child(2n) {
+    background-color: #fff;
+}
+.message-box-body tr:hover {
+    background: #fbf8e9;
+}
+.message-box-page {
+    position: absolute;
+    margin: 0 10px 0 10px;
+    bottom: 50px;
+    height: 20px;
+    /*color: #ccc;    */
+}
+.message-box-page > .prev {
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+}
+.message-box-page  .number {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 4px 14px;
+}
+.message-box-page > .next {
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+.number-start, .number-end {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 4px 14px;
+}
+/*.list-one {
+    width: 10%;
+}
+.list-two {
+    width: 10%;
+}
+.list-three {
+    width: 10%;
+}
+.list-four {
+    width: 10%;
+}
+.list-five {
+    width: 10%;
+}
+.list-six {
+    width: 10%;
+}
+.list-seven {
+    width: 10%;
+}
+.list-eight {
+    width: 10%;
+}
+.list-nine {
+    width: 20%;
+}*/
+.footer {
+    border-top: 2px solid #0663a2;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #c2a599;
+    line-height: 50px;
+}
+
+
+/**/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #bdf4eb;
+    border-radius: 4px;
+}
