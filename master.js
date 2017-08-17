@@ -45,13 +45,6 @@ var bindIndexThree = function() {
         })
     }
 }
-var toggleAside = function() {
-    var leftSide = document.querySelector('.left-side')
-    var rightSide = document.querySelector('.right-side')
-    toggleClass(leftSide, 'active-left')
-    toggleClass(rightSide, 'active-right')
-}
-
 var __app = function() {
     bindIndexOne()
     bindIndexTwo()
