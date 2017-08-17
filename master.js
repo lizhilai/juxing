@@ -1,4 +1,3 @@
-// console.log('run..')
 var removeClass = function(element, classname) {
     element.classList.remove(classname)
 }
